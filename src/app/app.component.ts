@@ -17,11 +17,27 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'LogIn',
+      url: '/login',
+      icon: 'person'
+    },
+    {
+      title: 'Signup',
+      url: '/signup',
+      icon: 'person'
+    },
+
+    {
       title: 'List',
       url: '/list',
       icon: 'list'
-    }
-  ];
+    },
+    {
+      title: 'AboutUs',
+      url: '/aboutus',
+      icon: 'information-circle-outline'
+    },
+      ];
 
   constructor(
     private platform: Platform,
