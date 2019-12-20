@@ -1,6 +1,4 @@
 exports.Fields = Object.freeze({
-    userEmailPattern :  "@gmail.com",
-    userGroupEntityName : "UserGroup",
     profileImagePrefix : "profileImg",
     objectId:"objectId",
     username:"username",
