@@ -1,0 +1,2 @@
+{"functionName":"login","params":{},"level":"info","message":"Ran cloud function login for user undefined with:\n  Input: {}\n  Result: {\"data\":null,\"message\":\"BAD_REQUEST\",\"statuscode\":400}","timestamp":"2019-12-20T13:17:16.901Z"}
+{"functionName":"login","params":{},"user":"9NI0mcWSzw","level":"info","message":"Ran cloud function login for user 9NI0mcWSzw with:\n  Input: {}\n  Result: {\"data\":null,\"message\":\"BAD_REQUEST\",\"statuscode\":400}","timestamp":"2019-12-20T13:19:55.148Z"}

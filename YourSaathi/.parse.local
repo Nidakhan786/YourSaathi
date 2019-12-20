@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "YourSaathi": {
+      "applicationId": "uo4hPQHJdB7f6XsZj8UX1MHlFsuDFrdjbf7UwHZd"
+    },
+    "_default": {
+      "link": "YourSaathi"
+    }
+  }
+}

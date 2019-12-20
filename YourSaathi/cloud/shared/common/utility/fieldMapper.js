@@ -1,0 +1,22 @@
+exports.Fields = Object.freeze({
+    userEmailPattern :  "@gmail.com",
+    userGroupEntityName : "UserGroup",
+    profileImagePrefix : "profileImg",
+    objectId:"objectId",
+    username:"username",
+    email:"email",
+    profileImage:"profileImage",
+    userObjectId:"userObjectId",
+    name:"name",
+    birthDate:"birthDate",
+    gender:"gender",
+    mobileNumber:"mobileNumber",
+    createdAt : "createdAt",
+    emailVerified:"emailVerified",
+    userRoleObjectId:"userRoleObjectId",
+    internal:"internal",
+    code: "code",
+    roleClassName : "_Role",
+    sessionToken : "sessionToken",
+    password : "password"
+});
