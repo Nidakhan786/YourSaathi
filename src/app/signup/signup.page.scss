@@ -2,3 +2,148 @@ ion-toolbar{
     --ion-background-color:#f9627d!important;
     color: #fff;
   }
+  ion-content{
+    text-align: center;
+    --ion-background-color: var(--ion-color-dark-blue);
+  }
+  ion-item{
+  color: #fff;
+   }
+   ion-content {
+    --ion-background-color: transparent ;  background-image: url("src/assets/images/3156508.jpg"); background-size: cover; }
+  
+    .gradient { width: 100%; height:100%; 
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+23,0.79+76,1+99 */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 23%, rgba(0,0,0,0.79) 76%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 23%,rgba(0,0,0,0.79) 76%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 23%,rgba(0,0,0,0.79) 76%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+      }
+      
+  
+  .mandatory {text-align: right;
+    font-size: 0.6em;
+    margin-right: 2em;
+    color:#fff;
+  
+  }
+  
+  
+  
+  .UpContent img{
+    width: 12%;
+    margin-top: 5%;	
+  }
+  
+  ion-avatar img {
+   height: 100px!important;
+    width: 100px!important;
+  }
+  
+  .UserProfile { 
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;}
+  
+  ion-avatar {
+    height:100px !important;
+    width:100px !important;
+  }
+  
+    ion-avatar img {
+   
+      background: var(--ion-color-white);
+   
+    }
+    // .formScroll{
+    //   overflow-y: scroll;
+    // }
+  
+  .phone .item {
+      width: 85%;
+      margin: 0 auto;
+    }
+  
+    ion-select {
+      max-width: 90%;
+    }
+    
+    .emailScroll{
+      overflow-x: scroll;
+    }
+    
+    .view {    border-radius: 0px 4px 4px 0px;
+      height: calc(1.5em + .75rem + 2px);
+      margin-left: -10px;}
+  ion-content {
+      --ion-background-color: transparent ;  background-image: url("src/assets/images/3156508.jpg"); background-size: cover; }
+  simple-login-container .btn-login{
+      color:var( --ion-color-white) !important;
+  }
+    .suggest {    margin: 5px 10px 10px 14px;
+      color: var(--ion-color-primary);
+      text-decoration: underline;
+      font-size: 14px;
+  }
+  
+    .error{	color: var(--ion-color-red)!important; font-size: 0.8em; margin:0px; white-space: normal;	 margin:0px 14px; text-align: left; }
+  
+    .list-md input { --ion-background-color : var(--ion-color-white);}
+  
+    .card {padding:2%; padding-top: 5%; margin:5%; margin-bottom:20%; border-radius: 0;
+      border: 0;     background: rgba(0, 27, 65, 0.7);}
+  
+    .gender{float: left; width:50%;}
+  
+    ion-checkbox { margin-top: 5px;
+      border: 1px solid #fff;}
+      
+  ion-label {margin-left:0.4em;}
+  
+      .terms{    margin-top: 5px;
+        margin-left: -28px;
+        font-size: 0.9em;
+        text-decoration: underline;
+        color: var(--ion-color-white);
+        white-space: normal;
+        word-break: break-word; }
+  
+        .space{    margin-top: 5px;
+          font-size: 0.9em;
+          color: var(--ion-color-white);
+          white-space: normal;
+          word-break: break-word; }
+   
+    .btn-login {background: var(--ion-color-btn-login)!important;
+      color:var( --ion-color-white) !important;}
+  
+      .backButton {position: absolute; left:5%; }
+      .backButton img{ width:44px;}
+  
+      .profile{margin-top:5%;}
+  
+      @media only screen 
+    and (max-device-width : 667px) 
+    and (min-device-height : 375px) 
+    and (-webkit-device-pixel-ratio : 2)
+  { 
+    .terms{ 
+      font-size: 0.8em;
+   }
+  }
+  
+  //iPhone 5:
+  @media screen and (device-aspect-ratio: 40/71) { 
+    .terms{ 
+      font-size: 0.7em;
+   }
+   }
+  
+    
+    
+  

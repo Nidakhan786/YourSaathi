@@ -1,0 +1,79 @@
+ion-toolbar{
+    --ion-background-color:#f9627d!important;
+    color: #fff;
+  }
+
+
+.simple-login-container{
+  max-width: 100%;
+    padding: 2em;}
+.simple-login-container h2{
+  text-align:center;
+  font-size:20px; overflow: hidden;
+}
+
+.view {border-radius: 0px 4px 4px 0px;}
+ion-content {
+  --ion-background-color: transparent ;  background-image: url("src/assets/images/3156508.jpg"); background-size: cover; }
+simple-login-container .btn-login{
+  color:var( --ion-color-white) !important;
+}
+a{
+  color:var( --ion-color-white);
+}
+
+.logoLogin {text-align: center;}
+.logoLogin  img {width: 70%; }
+.iconsSVG {width: 1.5em;}
+.btn-login {background: var(--ion-color-btn-login)!important; color:#fff;}
+.simple-login-container .error{
+  color:var( --ion-color-white)!important;
+}
+
+.form {margin-top: 20%;  background:rgba(0, 27, 65, 0.7 ); padding: 20px;}
+
+.btn-signUp{
+  color:var( --ion-color-white);
+  background: var( --ion-color-btn-signup);
+}
+
+.emailScroll{
+  overflow-x: scroll;
+}
+
+.forgotPwd{
+color: #ccc;
+  margin-top: 5px;
+  margin-left: 0px;
+  float: left;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+.popover-content.sc-ion-popover-ios {
+  border-radius: 0px!important; 
+ 
+}
+
+.popover-content.sc-ion-popover-ios {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: var(--width);
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  height: var(--height);
+  min-height: var(--min-height);
+  max-height: var(--max-height);
+  background: var(--background);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  overflow: auto;
+  z-index: 10;  }
+
+  .Blue_Footer{
+      background-color: rgba(0, 27, 65, 1)!important;
+      }

@@ -9,5 +9,93 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-
+  <div class="UpContent"> </div>
+  <div class="formScroll">
+    <form class="form" [formGroup]="signUpForm" (ngSubmit)="createAccount(signUpForm)">
+      <div class="profile">
+  
+        <br />
+      </div>
+      <div class="card">
+        <ion-list lines="none">
+          <ion-item>
+            <input type="text" class="form-control" formControlName="name" placeholder="Name" autofocus="true">
+          </ion-item>
+          <div class="mandatory">mandatory</div>
+          <p *ngIf="(signUpForm.controls.name.invalid && (signUpForm.controls.name.dirty || signUpForm.controls.name.touched))"
+            class="error">please enter name</p>
+          <ion-radio-group style="display: none;" formControlName="gender">
+            <ion-item class="gender">
+              <ion-label>male</ion-label>
+              <ion-radio value="Male"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>female</ion-label>
+              <ion-radio value="Female"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+          <ion-item style="display: none;">
+            <ion-datetime displayFormat="DD/MM/YYYY" class="form-control" placeholder="{{'birthday'}}"
+              formControlName="birthday"></ion-datetime>
+          </ion-item>
+                     <ion-item>
+            <input type="text" class="form-control emailScroll" formControlName="email" placeholder="Email"
+              autofocus="true">
+          </ion-item>
+          <div class="mandatory">mandatory</div>
+          <p *ngIf="(signUpForm.controls.email.invalid && (signUpForm.controls.email.dirty || signUpForm.controls.email.touched))"
+            class="error">enter a valid email</p>
+          <ion-item>
+            <input type={{passType}} class="form-control" formControlName="password" [(ngModel)]="passwordvalue"
+              placeholder="{{'Password'}}" (keyup)="passwordMatchValidator()" autofocus="true">
+              <button type="button" class="view" (click)="togglePasswordFieldType()"  ion-button  item-right><ion-icon    [name]="isTextFieldType ? 'eye-off' : 'eye'"  >
+              </ion-icon>
+            </button>  
+          </ion-item>
+          <div class="mandatory">mandatory</div>
+          <p *ngIf="(signUpForm.controls.password.invalid && (signUpForm.controls.password.dirty || signUpForm.controls.password.touched))"
+            class="error">
+           
+           enter password
+          </p>
+          <div class="suggest"  *ngIf="(signUpForm.controls.password.invalid && (signUpForm.controls.password.dirty))" (click)="generatePassword();setInput()" >
+            suggest password
+          </div>
+          <ion-item>
+            <input type={{passType}} class="form-control" formControlName="confirm_password" [(ngModel)]="confirmpassword"
+              placeholder="{{'confirm_password'}}" (keyup)="passwordMatchValidator()" autofocus="true">
+              <button type="button"  class="view" (click)="togglePasswordFieldType()"  ion-button  item-right><ion-icon    [name]="isTextFieldType ? 'eye-off' : 'eye'">
+                </ion-icon>
+              </button> 
+          </ion-item>
+          <div class="mandatory">mandatory</div>
+          <p *ngIf="NotMatched" class="error">didnt matche </p>
+          <ion-item style="display: none;">
+            <input type="number" class="form-control" formControlName="phone" placeholder="{{'Phone'}}"
+              autofocus="true">
+          </ion-item>
+          <ion-row ion-padding>
+            <ion-col size="2">
+              <ion-checkbox checked="false" formControlName="agree"></ion-checkbox>
+            </ion-col>
+            <ion-col size="10" >
+              <div style="display: inline;">
+                  <span class="terms" (click)="showContent('termsAndConditions')">
+                    termsAndConditions</span>
+                  <span class="space"> & </span>
+              </div>
+              <br>
+  
+            </ion-col>
+          </ion-row>
+          <ion-item>
+            <button type="submit" ion-button class="btn col-md-4 btn-login"
+              [disabled]="!signUpForm.valid || signUpForm.get('agree').value != true || NotMatched" block>
+              createAccount
+            </button>
+          </ion-item>
+        </ion-list>
+      </div>
+    </form>
+  </div>
 </ion-content>

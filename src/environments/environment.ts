@@ -8,9 +8,12 @@ export const environment = {
   parseServerUrl: "https://parseapi.back4app.com/",
   // parseAppID: "e5HKZKlw7qknBIPR6J6lmDf4G5l7EqVDBb4IJHac",
   javaScriptKey: "OSw8IwQgo4WfhrcR6Rrrt0BBP5YmIjWslaXJFwuM", //Please add for Back4App Environment else keep it empty
-  IS_BACK4APP : true
+  IS_BACK4APP : true,
+  CRYPTO_KEY: "",
+  CRYPTO_ENABLE: 0,
 };
-
+export const emailRegex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+export const passRegex: RegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
