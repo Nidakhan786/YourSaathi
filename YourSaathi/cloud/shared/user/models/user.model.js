@@ -90,6 +90,8 @@ const login = async (params) => {
             data.emailVerified = user.get('emailVerified')
             data.isLoggedIn = true;
             data.userId = user.id;
+            if(deviceToken)
+                await saveUserForPushNotification(user.id,deviceToken);
         }
     }
     catch (err) {
@@ -166,6 +168,36 @@ const save = async (data) => {
         throw error;
     }
 }
+/**
+ * Validate form data of Profile request
+ * @param {Object} params parameters of user save
+ */
+const validateData = async (params) => {
+    let isValidEmail, isValidUserId = false;
+    if (params.email) {
+        let email = params.email.replace(/\s+/g, '');
+        let isUserExist = await getUser(email);
+        if (isUserExist)
+            isValidEmail = true;
+    }
+    if (params.userId) {
+        let isUserExist = await getUserById(params.userId);
+        if (isUserExist)
+            isValidUserId = true;
+    }
+    return { isValidEmail: isValidEmail, isValidUserId: isValidUserId };
+}
+/**
+ * Get User by ObjectId
+ * @param {String} objectId id of user
+ * @return {Object}
+ */
+const getUserById = async (userId) => {
+    let userData = new Parse.Query(Parse.User);
+    userData.equalTo(fieldMapper.objectId, userId);
+    let user = await userData.first({ useMasterKey: true });
+    return user;
+}
 
 module.exports = {
     
@@ -176,5 +208,7 @@ module.exports = {
     validatePostData,
     getUser,
     save,
+    validateData,
+    getUserById,
     isDeviceTokenExist
 }

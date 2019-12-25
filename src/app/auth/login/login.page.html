@@ -94,8 +94,8 @@
       <div class="row forgotPwd mb-3" (click)="forgotPassword()">
        Forgot Password?
       </div>
-      <button type="submit" ion-button class="btn col-md-6 btn-login" block>
-        submit
+      <button type="submit" ion-button class="btn col-md-6 btn-login"[disabled]="!loginForm.valid" block>
+       Submit
       </button>
       <br>   <br>  
       <button type="button" ion-button class="btn col-md-6 btn-signUp" (click)="createAccount()" block>

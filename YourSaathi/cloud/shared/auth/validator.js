@@ -33,10 +33,9 @@ exports.validateLoginRequest = async(request) =>{
     let has_required_fields = await sharedHelper.isSubsetArray(requiredFieldArray,requestedFieldArr);
     if (request.params && isSubset && has_required_fields) {
         isvalidRequest = true;
-    }
     return isvalidRequest;
 }
 
 
 
-
+}

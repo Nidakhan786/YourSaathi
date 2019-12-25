@@ -29,7 +29,7 @@ exports.loginService = async (request) => {
     let responseObject;
     let userObject = this.getUserEntity();
     try {
-        let userRequestObj = Object.assign(userObject, request.params);
+        let userRequestObj = Object.assign(userObjexct, request.params);
         let loggedUser = await userModel.login(userRequestObj);
         responseObject = loggedUser.isLoggedIn ? sharedHelper.createResponse(loggedUser, sharedConstants.SUCCESS, sharedConstants.SUCCESS_CODE) :
             sharedHelper.createResponse(null, sharedConstants.FAILED, sharedConstants.UNAUTHORIZED_CODE);

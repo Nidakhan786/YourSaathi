@@ -133,6 +133,7 @@ export class SignupPage implements OnInit {
 
   async createAccount(signup: FormGroup) {
     try {
+  
       await this.sharedService.showLoader();
       this.signupValue.name = signup.value.name.trim();
       if (signup.value.birthday) {
@@ -155,13 +156,15 @@ export class SignupPage implements OnInit {
       this.signUpForm.reset();
       this.sharedService.hideLoader();
       await this.sharedService.setLocalStorageItem(LocalStorageConstants.RegEmail, JSON.stringify(this.signupValue.email));
-      setTimeout(async () => {
-        this.sharedService.presentAlert('verify_email').then((data: any) => {
-          if (data.data === true) {
-            this.navCtrl.navigateBack("/login");
-          }
-        });
-      }, 1000);
+      err => {
+        this.sharedService.hideLoader();
+        this.sharedService.setLocalStorageItem(LocalStorageConstants.Auth, JSON.stringify({}));
+        if (err.message != null && err.message != undefined && err.message != '') {
+          this.sharedService.showToast(err.message, 'top');
+        } else {
+          this.sharedService.showToast(err, 'top');
+        }
+      }
     } catch (error) {
       await this.sharedService.hideLoader();
       this.sharedService.showToast(error.message, 'top');

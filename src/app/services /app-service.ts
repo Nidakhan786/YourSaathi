@@ -13,7 +13,7 @@ export class AppService {
   }
 
   notificationValue = new BehaviorSubject<number>(0);
-  networkValue = new BehaviorSubject<boolean>(false);
+  networkValue = new BehaviorSubject<boolean>(true);
 
 
 

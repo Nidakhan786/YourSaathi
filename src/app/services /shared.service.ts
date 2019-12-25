@@ -14,7 +14,7 @@ import { LocalStorageConstants } from '../model/local-storage.constants';
 export class SharedService {
 
   public globaLoader: any[] = [];
-  networkConnection: boolean = false;
+  networkConnection: boolean = true;
   target: string = "_system"; // _blank //_self
 
   //compress file var
