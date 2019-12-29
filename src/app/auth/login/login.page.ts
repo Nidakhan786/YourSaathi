@@ -115,7 +115,7 @@ export class LoginPage implements OnInit {
    */
 
   async loginUser(value: User) {
-    //await this.sharedService.showLoader();
+     await this.sharedService.showLoader();
     
       this.authService.loginUser(value).then((res: any) => {
         if (res != null && res != undefined && res.emailVerified === true) {
@@ -131,12 +131,13 @@ export class LoginPage implements OnInit {
             //  this.sharedService.hideLoader();
              // if (this.redirectPage == "home") {
                 this.navCtrl.navigateForward('/home');
-    
-      //  } else {
-      //    this.sharedService.hideLoader();
-       // }
+                this.sharedService.hideLoader();
+        } 
+        else {
+      this.sharedService.hideLoader();
+        }
     //  })
-  }})}
+  })}
   resendVerificationMail(email: any) {
     throw new Error("Method not implemented.");
   }

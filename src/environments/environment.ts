@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   parseAppID: "uo4hPQHJdB7f6XsZj8UX1MHlFsuDFrdjbf7UwHZd",
-  parseServerUrl: "https://parseapi.back4app.com/",
+  parseServerUrl: "https://parseapi.back4app.com",
   PORT:4040,
   // parseAppID: "e5HKZKlw7qknBIPR6J6lmDf4G5l7EqVDBb4IJHac",
   javaScriptKey: "OSw8IwQgo4WfhrcR6Rrrt0BBP5YmIjWslaXJFwuM", //Please add for Back4App Environment else keep it empty
