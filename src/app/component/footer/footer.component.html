@@ -1,0 +1,17 @@
+<div class="Pink_Footer">
+  <div class="links ion-align-items-center" (click)="dashboard()">
+    <ion-icon name="home"></ion-icon>
+  </div>
+  <div class="links" (click)="loginCheck()"> <img src="assets/images/Forum.svg" alt="Messages"> </div>
+  <div class="links" (click)="setting()">
+    <ion-icon name="settings"></ion-icon>
+  </div>
+  <div class="links" (click)="showNotification($event)">
+      <ion-fab vertical="bottom" horizontal="end">
+          <ion-fab-button class="fab">
+              <ion-icon name="notifications" class="fabIcon"> </ion-icon>
+          </ion-fab-button>
+          <ion-fab-list side="top">
+              <ion-fab-button class="iconButton" ><img src="assets/images/Messages.svg" alt="Messages" (click) ="notification()"></ion-fab-button>
+            </ion-fab-list>
+        </ion-fab>

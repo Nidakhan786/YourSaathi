@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'signup',
     loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'anonycounsel',
+    loadChildren: () => import('./anonycounsel/anonycounsel.module').then( m => m.AnonycounselPageModule)
+  },
+  {
+    path: 'forum',
+    loadChildren: () => import('./forum/forum.module').then( m => m.ForumPageModule)
   }
 ];
 

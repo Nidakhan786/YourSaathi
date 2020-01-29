@@ -1,0 +1,24 @@
+{
+    "informationfeed":[
+        {
+        "image" : "assets/images/3.jpg",
+        "title": "Exploring choices and making decisions",
+        "description":"help you explore many things and helps to make proper decisions"
+    },
+        {
+            "image" : "assets/images/3.jpg",
+            "title": "Exploring choices and making decisions",
+            "description":"help you explore many things and helps to make proper decisions"
+        },
+        {
+            "image" : "assets/images/3.jpg",
+            "title": "Exploring choices and making decisions",
+            "description":"help you explore many things and helps to make proper decisions"
+        },
+        {
+            "image" : "assets/images/3.jpg",
+            "title": "Exploring choices and making decisions",
+            "description":"help you explore many things and helps to make proper decisions"
+        }
+    ]
+}

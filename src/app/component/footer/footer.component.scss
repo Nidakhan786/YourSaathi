@@ -1,0 +1,68 @@
+.Pink_Footer{  background-color:#f9627d; width:100%;  text-align: center;  position:fixed;	 bottom:0; z-index: 99;}	
+.Pink_Footer img {width:1.8em;	}
+.links { float: left;
+    width:25%;
+    height: 100%;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    color: #ffffff;
+} 
+
+
+ion-icon {color:var(--ion-color-light-gray); font-size:1.8em; }
+
+.notificationNumber 
+{ width: 1.7em;
+  height: 1.7em;
+  border-radius: 50%;
+  font-size: 0.6em;
+  color: var(--ion-color-white);
+  text-align: center;
+  background: var(--ion-color-red);
+  font-weight: bold;
+  position: fixed;
+  right: 8%;
+  bottom: 3%;
+  }
+
+  ion-fab{top:-7px;}
+
+  .fab {--background: transparent!important;
+    --background-activated: transparent!important;
+    --background-focused:transparent!important;
+    -color: #ffffff;
+    --color-activated: #ffffff;
+    --color-focused: #ffffff;
+    --box-shadow: 0;
+
+    --transition: box-shadow 280ms cubic-bezier(0.4,0,0.2,1),background-color 280ms cubic-bezier(0.4,0,0.2,1),color 280ms cubic-bezier(0.4,0,0.2,1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0,0,0.2,1) 0ms;
+  }
+
+  .iconButton{margin: -27px;}
+
+
+  .fabIcon {font-size: 2em;
+    margin-top:0;}
+  
+
+    
+/* iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+
+  
+
+  }
+  
+  /* iphone XR */
+  @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) { 
+    
+ 
+  }
+  
+  /* iphone XS Max */
+  @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) { 
+   
+  
+  
+  }
+  

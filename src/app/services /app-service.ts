@@ -1,6 +1,8 @@
 /** Common Dependencies Import*/
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, from } from 'rxjs';
+import { InformationfeedService } from '../informationfeed/services/informationfeed.service';
+import{InformationFeed} from'../informationfeed/model/informationfeed.model';
 /**Close Common Dependencies Import*/
 
 
@@ -14,7 +16,7 @@ export class AppService {
 
   notificationValue = new BehaviorSubject<number>(0);
   networkValue = new BehaviorSubject<boolean>(true);
-
+  feedData = new BehaviorSubject<InformationFeed[]>([]);
 
 
   /**
@@ -39,7 +41,9 @@ export class AppService {
   getNetworkStatus(): Observable<boolean> {
     return this.networkValue.asObservable();
   }
-
+  setfeedData(val: InformationFeed[]) {
+    this.feedData.next(val);
+  }
   /**
    * Set network status
    */
@@ -47,7 +51,9 @@ export class AppService {
     this.networkValue.next(val);
   }
 
-
+  getfeedData(): Observable<InformationFeed[]> {
+    return this.feedData.asObservable();
+  }
 
   
 

@@ -1,4 +1,333 @@
 ion-toolbar{
-  --ion-background-color:#f9627d!important;
-  color: #fff;
+  --ion-background-color:#fff!important;
+  color: #f9627d;;
+}
+
+.sc-ion-card-ios-h {
+  margin-bottom:0px!important;   
+  -webkit-box-shadow:0;
+  box-shadow:none;
+  margin-top: 0px!important; margin-left: 0px!important;    margin-inline-end:0px!important;}
+
+.sc-ion-card-md-h {margin-bottom:0px!important; 
+  -webkit-box-shadow:0;
+  box-shadow:none;
+  margin-top: 0px!important; margin-left: 0px!important; 
+  margin-inline-end:0px!important;}
+
+ion-spinner {
+  display: block;
+  margin: auto;
+  color: var(--ion-color-primary-contrast);
+}
+
+.addItem { clear: both;
+padding: 5px;
+background:var(--ion-color-primary-contrast);
+border-radius:0px;
+text-align: center;}
+
+/*  ----------------------  Homepage */
+
+.simple-container{
+width:300px; 
+height: 500px;
+max-width:100%;
+margin:10px auto;
+background-color:var(--ion-color-dark-blue);
+}
+.pagNews { margin-bottom:5px; color: var(--ion-color-light-contrast);}
+
+.smallItem {float: left;  display: flex;
+padding: 2em;
+background: var(--ion-color-light-green);    
+margin-right:5px;
+  background-size: cover;
+border-radius: 14px;
+
+}
+
+.itemBox {margin:1em; color: var(--ion-color-light-contrast);}
+
+.item1 { clear: both;
+padding:5px;
+background: var(--ion-color-light-green);
+border-radius: 14px;
+text-align: center;}
+.item1 img { width: 40%;}
+
+
+
+.item2 { clear: both;
+padding:5px;
+background: var(--ion-color-background-blue);
+border-radius: 14px;
+text-align: center;}
+
+
+.item2 img { width: 40%;}
+.addItem { clear: both;
+    padding: 5px;
+    background: var(--ion-color-item-blue);
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+.addItem img { width:7%;}
+
+.emergency {  
+  float: right;
+  color: var(--ion-color-primary-contrast);
+  margin-top: 10px;
+} 
+
+.emergency  img {width:15%;  padding: 0.3em; border:1px solid var(--ion-color-primary-contrast);
+border-radius: 3em;}    
+
+.News {  border: none; height:150px!important;   border-radius:0px; }
+
+
+.newsDiv {width:50%;  }
+
+
+.contentContainer {padding: 10px; background-size: cover;     margin-top: 10%; color:var(--ion-color-primary-contrast); display:block;}
+
+.ButtonHome { padding:0em; color: var(--ion-color-primary-contrast); 
+background-repeat: no-repeat;  font-size:1.1em; font-weight: bold;   background-position-x: left;
+background-position-y: center; } 
+.ButtonHome img {width:4em; margin-right: 20px;}
+
+ion-content {
+  --ion-background-color: transparent ;  background-size: cover; }
+
+.itemSlidingStyle{
+      border: 1 px solid !important;
+  }
+  hr{padding: 0px; margin:0px; background: #f9627d !important;}
+
+  .sectionHeader {    background: #f9627d;
+    // border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    width: 27%;
+    padding: 1px;
+    margin: 10px 0;
+    height: 51px;
+    width: inherit;
+    font-size: 2em;
+}
+
+ion-grid {padding:0;}
+
+
+
+.iconsBoxHome{ min-height: 85px;  margin-left:5px;   margin-bottom:5px; text-align: center; text-transform:uppercase; color:#001b41; background-color: rgba(255, 255, 255, 0.7);}
+.iconsBoxHome img {width: 50%; margin-top: 10px;} 
+
+.closeIcon {   position: absolute; right: 2px; top: 2px;}
+.Heading {      margin-top: 5%;
+  font-size: 0.7em;
+  font-weight: 700;
+  line-height: 1em;
+  position: absolute;
+  bottom: 6px;
+  text-align: center;
+  width: 100%;}
+
+  .more { text-transform: uppercase; margin-bottom: 1em;
+    margin-top:0em; text-align: right; font-size: 0.7em; scroll-padding-top: 2px;  font-weight: bold;} 
+
+  .card-content-md {
+      padding-left: unset;
+      padding-right: unset;            
+     }
+ion-content{
+  background: #fff;
+}
+ 
+      .Card_Newsfeed{
+        position: absolute;
+        top: 0;
+        background: #f9627d !important;
+        font-size: 0.8em;
+        color: #fff !important;
+        right: 0;
+        height: 80%;
+        padding: 10px 15px;
+        /* font-size: 10px; */
+        width: 50%;
+        text-align: left;
+      }
+
+      .arrow {    width: 0px;
+        height: 0px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 24px solid #f9627d;
+        position: absolute;
+        left: -23px;}
+
+      .swiper-slide img { width:60%;  height:80%; 
+       
+         }
+
+      .delete{
+          background: var(--ion-color-delete-background);
+          color:var(--ion-color-primary-contrast) !important;
+      }
+.leaveIcon img {width:18%!important;}
+
+.newsDiv img {position: absolute;}
+ion-col {padding:0px;}
+
+.Blue_Footer_home .Blue_Footer{  background-color:rgba(0,27,65, 0.5)!important; }
+
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px)
+and (device-width : 414px)
+and (device-height : 736px)
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio : 3) 
+and (-webkit-device-pixel-ratio : 3)
+{  
+  .iconsBoxHome img {width:60%; margin-top: 10px;} 
+  .iconsBoxHome  {height:95px!important;} 
+  .contentContainer {margin-top: 27%!important;}
+ 
+}
+
+@media only screen 
+
+and (max-device-width : 667px) 
+and (min-device-height : 375px) 
+
+and (-webkit-device-pixel-ratio : 2)
+{ 
+
+}
+
+//@media screen and (device-aspect-ratio: 2/3) {}s
+//iPhone 5:
+
+@media screen
+ and (device-width : 320px)
+and (device-height : 568px) { 
+.ButtonHome{font-size:1em;}
+iconsBoxHome{height:80px!important; }
+
+}
+
+//iPhone 6:
+//@media screen and (device-aspect-ratio: 375/667) {}
+
+//iPhone 6 Plus:
+//@media screen and (device-aspect-ratio: 16/9) {}
+
+/* iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+  .contentContainer {  margin-top:33%; }
+  .iconsBoxHome  {height:85px;} 
+}
+
+/* iphone XR */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) { 
+
+}
+
+/* iphone XS Max */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) { 
+ 
+}
+.blocks{
+  background: #f9627d;
+  color: #ffff;
+  height: 78px;
+  margin-top: 68px;
+  width: 113px;
+  text-align: center;
+border-radius: 10px;  
+padding-top: 12px;
+
+}
+.Blue_Header {
+  background-color:#f9627d;
+   height:16%; 
+   text-align: center;
+   position:fixed;  width: 100%;
+    top: 0;
+     z-index: 9999;}
+
+.Blue_Header .logo {   position: relative;
+ top:35%;
+ left: 0;
+
+ text-align: left;}
+.Blue_Header img {width:70%; }
+
+
+
+
+/* iphone 6/7plus */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px)
+and (device-width : 414px)
+and (device-height : 736px)
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio : 3) 
+and (-webkit-device-pixel-ratio : 3)
+{  
+ .iconsBoxHome img {width:60%; margin-top: 10px;} 
+ .iconsBoxHome  {height:95px;} 
+ .contentContainer {margin-top: 27%!important;}
+
+
+}
+
+
+/* iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { 
+
+
+
+
+ .notificationNumber {top:46%; }
+ .notification {position:absolute; width:2em; top:57%; right:4%; }
+}
+
+/* iphone XR */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) { 
+ 
+
+
+ .notificationNumber {top:46%; }
+ .notification {position:absolute; width:2em; top:57%; right:4%; }
+}
+
+/* iphone XS Max */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) { 
+
+
+ .notificationNumber {top:46%; }
+ .notification {position:absolute; width:2em; top:57%; right:4%; }
+}
+
+
+
+/* iphone XR */
+
+@media only screen 
+   and (min-device-width : 414px) 
+   and (max-device-width : 736px)
+   and (device-width : 414px)
+   and (device-height : 736px)
+   and (orientation : portrait) 
+   and (-webkit-min-device-pixel-ratio : 3) 
+   and (-webkit-device-pixel-ratio : 3)
+{  
+
+
 }

@@ -7,9 +7,55 @@
       Home
     </ion-title>
   </ion-toolbar>
+  <!-- <div class="Blue_Header col-md-12" > <img slot="center" class="logo" src="assets/images/Logo.png" alt="logo" >
+  </div> -->
+  <!-- <div class="sectionHeader">YourSaathi</div> -->
 </ion-header>
+<ion-content class="ion-content">
+  <div class="contentContainer">
+    <div>
+    
+            <ion-slides pager="true">
+              <ion-slide *ngFor="let newsData of completeArray.informationfeed; let i = index" >
+                <ion-card class="News">
+                <img alt= "newsData" [src]="newsData.image"> </ion-card>
+                  <ion-card-content class="Card_Newsfeed">
+                    {{newsData.title}}
+                  </ion-card-content>
+                
+              </ion-slide>
+            </ion-slides>
+    </div>
 
-<ion-content>
-<h1>Helllo Welcome to Home Page </h1>
-<button (click)= aboutUs()> AboutUS </button>
+
+  
+    <div class="more" *ngIf="completeArray.length != 0" (click)="openNewsFeedList()">moreinfo</div>
+
+    <!---------------------------------- NEWS SECTION --------------------------------------->
+
+    <!---------------------------------- LINKS SECTION --------------------------------------->
+    
+    <!---------------------------------- LINKS SECTION --------------------------------------->
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class= "blocks" (click)="anonycounsel()">
+        ANONYMOUS COUNSELLING
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="blocks" >
+         TALK TO OUR EXPERTS
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class= "blocks" (click)="forum()"> 
+         DISCUSS IN A FORUM
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+<ion-footer>
+<app-footer></app-footer></ion-footer>

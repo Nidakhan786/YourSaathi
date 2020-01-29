@@ -1,6 +1,6 @@
 ion-toolbar{
-    --ion-background-color:#f9627d!important;
-    color: #fff;
+    --ion-background-color:#fff!important;
+    color: #f9627d;
   }
 
 
@@ -24,7 +24,7 @@ ion-toolbar{
 
 .view {border-radius: 0px 4px 4px 0px;}
 ion-content {
-  --ion-background-color: transparent ;  background-image: url("src/assets/images/3156508.jpg"); background-size: cover; }
+  --ion-background-color: transparent ;  background-color: #fff; background-size: cover; }
 simple-login-container .btn-login{
   color:var( --ion-color-white) !important;
 }
@@ -35,7 +35,7 @@ a{
 .logoLogin {text-align: center;}
 .logoLogin  img {width: 70%; }
 .iconsSVG {width: 1.5em;}
-.btn-login {background:#4c8dff; color:#fff;}
+.btn-login {background:#f9627d; color:#fff;}
 .simple-login-container .error{
   color:var( --ion-color-white)!important;
 }
@@ -43,8 +43,8 @@ a{
 .form {margin-top: 20%;  background:#f78096; padding: 20px;}
 
 .btn-signUp{
-  color:var( --ion-color-white);
-  background: #fff;
+  color:#fff;
+  background: #f9627d;
 }
 
 .emailScroll{
