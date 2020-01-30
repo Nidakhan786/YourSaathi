@@ -17,26 +17,50 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'LogIn',
-      url: '/login',
-      icon: 'person'
+      title: 'Schedule',
+      url: '/schedule',
+      icon: 'calendar'
     },
     {
-      title: 'Signup',
-      url: '/signup',
-      icon: 'person'
-    },
-
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Counselors Profile',
+      url: '/counselorsProfile',
+      icon: 'people'
     },
     {
-      title: 'AboutUs',
+      title: 'Advice',
+      url: '/advice',
+      icon: 'chatbubbles'
+    },  
+    {
+      title: 'About YourSaathi',
+      url: '/aboutus',
+      icon: 'help'
+    },
+    {
+      title: 'Terms & Conditions',
       url: '/aboutus',
       icon: 'information-circle-outline'
     },
+    {
+      title: 'Privacy Policy',
+      url: '/aboutus',
+      icon: 'information-circle-outline'
+    },
+    {
+      title: 'FAQ',
+      url: '/aboutus',
+      icon: 'information-circle-outline'
+    },
+    {
+      title: 'Contact',
+      url: '/aboutus',
+      icon: 'call'
+    },
+    // {
+    //   title: 'Logout',
+    //   url: '/login',
+    //   icon: 'log-out'
+    // },
       ];
 
   constructor(
